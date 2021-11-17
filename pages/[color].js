@@ -11,10 +11,10 @@ export async function getStaticProps({ params }) {
   return { props: { color } }
 }
 
-export async function getStaticPaths() {
-  const paths = colors.map(color => ({
-    params: { color: color.name }
-  }))
+// export async function getStaticPaths() {
+//   const paths = colors.map(color => ({
+//     params: { color: color.name }
+//   }))
 
-  return { paths, fallback: false }
-}
+//   return { paths, fallback: false }
+// }
